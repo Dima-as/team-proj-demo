@@ -1,0 +1,69 @@
+.gallery {
+padding-top: 54px;
+padding-bottom: 54px;
+background-color: rgb(47, 79, 79);
+}
+.background {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	max-width: 1600px;
+	height: 600px;
+	background-image: radial-gradient(
+		circle at center,
+      rgba(52, 61, 155, 0.2),
+      rgba(47, 48, 58, 0.2)
+   ),
+	url("../images/forest/krivoj-les.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+.background__text {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: rgba(255,255,255,0.7);
+}
+.background__titel {
+	margin-bottom: 15px;
+	font-weight: 900;
+	font-size: 35px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--white-color);
+}
+.gallery__title {
+	font-weight: 900;
+	font-size: 25px;
+	line-height: 1.5;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--primary-text-color);
+}
+.gallery__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+}
+.gallery__item {
+	width: calc((100% - 4 * 15px) / 2);
+	margin: 15px;
+	&:nth-child(1) .gallery__text{
+		margin-bottom: 15px;
+	}
+	&:nth-child(4) .gallery__text{
+		margin-bottom: 32px;
+	}
+}
+.gallery__text {
+	font-size: 17px;
+	line-height: 1.5;
+	color: var(--secondary-text-color);
+}
