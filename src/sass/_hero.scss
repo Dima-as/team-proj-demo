@@ -1,0 +1,96 @@
+.hero {
+	display: flex;
+	justify-content: end;
+	padding-right: 40px;
+	padding-left: 40px;
+	max-width: 1600px;
+	height: 600px;
+	background-image: radial-gradient(
+		circle at center,
+      rgba(52, 61, 155, 0.2),
+      rgba(47, 48, 58, 0.2)
+   ),
+	url('../images/shiraito.jpg');
+	background-position: center;
+	background-size:cover ;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+
+}
+.hero__wrapper{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.hero__text {
+	margin-top: auto;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	
+
+	color: rgba(255,255,255,0.7);
+}
+.hero__title {
+	margin-bottom: 15px;
+	font-weight: 900;
+	font-size: 35px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--white-color);
+}
+
+.hero__list {
+	display: flex;
+	margin-left: auto;
+}
+.hero__item {
+	&:not(:last-child){
+		margin-right: 10px;
+	}
+	&:nth-child(2) .hero__link{
+		background-color: #547fb1;
+	}
+	&:nth-child(5) .hero__link{
+		background-color: #24a9dd;
+	}
+	&:nth-child(4) .hero__link{
+		background-color: #289ed9;
+	}
+	&:nth-child(3) .hero__link{
+		background-color: #d928ad;
+	}
+	  .hero__link:hover & {
+		background-color: #547fb1;
+	}
+}
+.hero__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background-color: #d24030;
+	border-radius: 8px;
+	transition: cubic-bezier 500ms (0.165, 0.84, 0.44, 1);
+	&:hover ,
+	&:focus {
+	transform: scale(1.2, 1);
+	}
+	&:hover .hero__icon,
+	&:focus .hero__icon{
+		// width: 25px;
+		// height: 25px;
+		fill: var(--white-color);
+	}
+
+}
+.hero__icon{
+	width: 20px;
+	height: 20px;
+	fill: #ffffff9d;
+}
