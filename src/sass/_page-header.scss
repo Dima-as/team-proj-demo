@@ -1,0 +1,20 @@
+.page-header {
+	background-color: #5A80B1;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+// .page-heade__nav {
+// }
+.page-heade__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+// .page-heade__item {
+// }
+.page-heade__link {
+	padding: 8px 20px;
+	font-size: 17px;
+	line-height: 1.5;
+	color: var(--white-color);
+}
