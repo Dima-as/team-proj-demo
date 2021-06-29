@@ -1,8 +1,14 @@
-.cards{
-	padding-top: 54px;
-	background-color: rgb(47, 79, 79);
+.cards__title{
+	font-weight: 900;
+	font-size: 25px;
+	line-height: 1.5;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--primary-text-color);
+	margin: 30px 0;
 }
-.cards__list{
+.cards{
 	display: flex;
 	flex-wrap: wrap;
 	margin: -15px;
@@ -10,14 +16,10 @@
 .cards__item{
 	width: calc((100% - 4 * 15px) / 2);
 	margin: 15px;
-	&:nth-child(1) .cards__text{
-		margin-bottom: 25px;
-	}
-	&:nth-child(3) .cards__text{
-		margin-bottom: 36.5px;
-	}
+
 }
 .cards__text{
+	margin-top: 15px;
 	font-size: 17px;
 	line-height: 1.5;
 	color: var(--secondary-text-color);
