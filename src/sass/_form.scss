@@ -88,7 +88,7 @@
    clip: rect(0 0 0 0);
    overflow: hidden;
 	&:checked + .form__label-check::before{
-		background-image: url("../images/icon\ check.svg");
+		background-image: url("../images/icon-check.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-origin: border-box;
