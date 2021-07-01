@@ -5,11 +5,13 @@
 }
 .social__text {
 	margin-left: auto;
+	margin-top: auto;
 	margin-bottom: 30px;
 	text-align: center;
 	font-weight: 900;
 	font-size: 17px;
 	line-height: 1.5;
+	color: var(--accent);
 }
 .social__list {
 	display: flex;

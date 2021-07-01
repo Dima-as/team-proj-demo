@@ -4,8 +4,8 @@
 	max-width: 500px;
 
 }
-.form__form-fild{
-}
+// .form__form-fild{
+// }
 .form__label--wrapper{
 	display: flex;
 	flex-wrap: wrap;
@@ -23,9 +23,19 @@
 	color: var(--secondary-text-color);
 }
 .form__input{
+	border: 1px solid transparent;
+	border-radius: 4px;
+	margin-top: 4px;
+	padding-left: 5px;
 	height: 40px;
+	&:focus{
+		outline: none;
+		border: 3px solid var(--accent);
+	}
 }
 .form__label-texterea{
+	margin-top: 10px;
+	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
 
@@ -36,14 +46,24 @@
 	
 }
 .form__texterea{
+	margin-top: 4px;
+	padding-left: 8px;
+	padding-top: 8px;
+	border-radius: 4px;
+	border: 1px solid transparent;
 	width: 100%;
 	height: 100px;
 	resize: none;
+	&:focus{
+		outline: none;
+		border: 3px solid var(--accent);
+	}
 }
 .form__label-check{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 12px;
+	margin-bottom: 10px;
+	font-size: 17px;
    line-height: 14px;
    letter-spacing: 0.01em;
 	color: var(--secondary-text-color);
@@ -54,7 +74,8 @@
 		cursor: pointer;
 		width: 15px;
 		height: 15px;
-		border: 2px solid var(--accent);
+		border: 2px solid transparent;
+		background-color: var(--white-color);
 	}
 }
 .form__check{
